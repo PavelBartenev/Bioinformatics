@@ -142,11 +142,11 @@ int get_code(char letter)
 	switch (letter) {
 	case 'A':
 		return 0;
-	case 'T':
+	case 'C':
 		return 1;
 	case 'G':
 		return 2;
-	case 'C':
+	case 'T':
 		return 3;
 	}
 
@@ -159,11 +159,11 @@ char get_letter(int code)
 	case 0:
 		return 'A';
 	case 1:
-		return 'T';
+		return 'C';
 	case 2:
 		return 'G';
 	case 3:
-		return 'C';
+		return 'T';
 	}
 
 	return 10;
