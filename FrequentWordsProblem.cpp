@@ -20,6 +20,8 @@ int long_term_processing(int mer_length, const std::string& database, std::vecto
 
 int count_mer(const std::string& database, int mer_start, int mer_length);
 
+const int Large_term_length = 12;
+
 int main()
 {
 	std::string database;
@@ -36,7 +38,7 @@ int main()
 
 	std::vector<std::string> most_freq_mers;
 
-	if (mer_length < 12)
+	if (mer_length < Large_term_length)
 		short_term_processing(mer_length, database, most_freq_mers);
 	else
 		long_term_processing(mer_length, database, most_freq_mers);
